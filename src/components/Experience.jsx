@@ -25,7 +25,7 @@ const Experience = () => {
       organization: "Nepal Republic Media Limited (“The Republica”)",
       period: "September 2020 – October 2021",
       details:
-        "Crafted high-quality journalism—research, interviews, concise articles.",
+        "Crafted high-quality journalism, research, interviews, concise articles.",
       glowColor: "from-yellow-400 to-amber-500",
       logo: "/republica.jpg",
     },
