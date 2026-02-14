@@ -39,7 +39,7 @@ const Experience = () => {
       logo: "/kantipur.png",
     },
     {
-      role: "L1 Associate",
+      role: "Engineer",
       organization:
         "Pokhara International Airport (Mahavir Shree International Pvt. Ltd.)",
       period: "March 2025 – Present",
