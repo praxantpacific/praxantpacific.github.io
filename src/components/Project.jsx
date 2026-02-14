@@ -53,19 +53,19 @@ const testimonials = [
     image: "/elon.jpg",
     quote: "Prashant's code is so clean it improved our team's IQ by 30 points",
     name: "Elon Musk",
-    logo: "/logos/SpaceX.svg",
+    logo: "/SpaceX.svg",
   },
   {
     image: "/satya.jpg",
     quote: "We asked for a website, he delivered a technological revolution",
     name: "Satya Nadella",
-    logo: "/logos/Microsoft.svg",
+    logo: "/Microsoft.svg",
   },
   {
     image: "/sundar.jpg",
     quote: "His algorithms made our AI cry tears of inadequacy",
     name: "Sundar Pichai",
-    logo: "/logos/Google.svg",
+    logo: "/Google.svg",
   },
 ];
 
