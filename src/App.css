@@ -42,3 +42,87 @@
 .read-the-docs {
   color: #888;
 } */
+
+
+
+
+//new code add to app.css
+
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 320px;
+  background: linear-gradient(145deg, #111827, #1f2937);
+  border-radius: 20px;
+  padding: 40px 25px;
+  text-align: center;
+  color: #e5e7eb;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+  transition: 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.profile-wrapper {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(135deg, #00f5ff, #ff00c8);
+  animation: glow 3s infinite alternate;
+}
+
+.profile-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0f172a;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 20px #00f5ff, 0 0 30px #ff00c8; }
+  100% { box-shadow: 0 0 35px #00f5ff, 0 0 55px #ff00c8; }
+}
+
+.hover-glow {
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.hover-glow:hover {
+  text-shadow: 
+    0 0 5px #60a5fa,
+    0 0 10px #60a5fa,
+    0 0 20px #3b82f6,
+    0 0 40px #1d4ed8;
+}
+
+
+.quote {
+  font-family: 'Roboto', sans-serif; /* Roboto font */
+  color: #ffffff;                     /*  White color */
+  font-size: 1.1rem;
+  font-weight: 250;                    /* Bold */
+  text-align: center;
+  line-height: 1.5;
+  font-style: italic;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* subtle pop */
+  margin-bottom: 1rem;
+}
+
+.quote:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
