@@ -9,7 +9,7 @@ const Experience = () => {
       details:
         "Developed SEO-optimized content, drove traffic, tailored messaging to audiences.",
       glowColor: "from-green-400 to-lime-500",
-      hexLetter: "S",
+      logo: "/lattice.png",
     },
     {
       role: "Intern",
@@ -18,7 +18,7 @@ const Experience = () => {
       details:
         "Gained experience with front-end (HTML/CSS, ReactJS) and back-end (PHP, WordPress, Laravel).",
       glowColor: "from-blue-400 to-cyan-500",
-      hexLetter: "I",
+      logo: "/nepdroid.png",
     },
     {
       role: "Content Writer",
@@ -27,7 +27,7 @@ const Experience = () => {
       details:
         "Crafted high-quality journalism—research, interviews, concise articles.",
       glowColor: "from-yellow-400 to-amber-500",
-      hexLetter: "C",
+      logo: "/republica.jpg",
     },
     {
       role: "Content Writer",
@@ -36,16 +36,17 @@ const Experience = () => {
       details:
         "Produced compelling stories and trend analysis for a major daily newspaper.",
       glowColor: "from-red-400 to-pink-500",
-      hexLetter: "C",
+      logo: "/kantipur.png",
     },
     {
       role: "L1 Associate",
-      organization: "Pokhara International Airport (Mahavir Shree International Pvt. Ltd.)",
+      organization:
+        "Pokhara International Airport (Mahavir Shree International Pvt. Ltd.)",
       period: "March 2025 – Present",
       details:
         "Document verification, boarding procedures, flight communications.",
       glowColor: "from-purple-400 to-indigo-500",
-      hexLetter: "L",
+      logo: "/CAN.png",
     },
     {
       role: "Graphics Designer",
@@ -54,7 +55,7 @@ const Experience = () => {
       details:
         "Transformed ideas into visual masterpieces—creative & impactful designs.",
       glowColor: "from-pink-400 to-rose-500",
-      hexLetter: "G",
+      logo: "/lattice.png",
     },
   ];
 
@@ -78,17 +79,19 @@ const Experience = () => {
               key={index}
               className={`relative bg-gray-800/50 p-8 rounded-2xl border border-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden`}
             >
-              {/* Hexagon Glow Effect */}
+              {/* Glow Effect */}
               <div
                 className={`absolute -inset-1 bg-gradient-to-r ${exp.glowColor} rounded-lg blur opacity-0 group-hover:opacity-50 transition-opacity duration-300`}
               ></div>
 
               <div className="relative z-10">
                 <div className="flex items-center mb-6">
-                  <div
-                    className={`hexagon bg-gradient-to-br ${exp.glowColor} mr-4 flex items-center justify-center text-white font-bold text-xl`}
-                  >
-                    {exp.hexLetter}
+                  <div className="circle bg-gray-900/30 mr-4 flex items-center justify-center overflow-hidden">
+                    <img
+                      src={exp.logo}
+                      alt={exp.organization}
+                      className="w-10 h-10 object-contain"
+                    />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-white">
@@ -106,19 +109,12 @@ const Experience = () => {
         </div>
       </div>
 
-      {/* Hexagon CSS */}
+      {/* Circle CSS */}
       <style jsx>{`
-        .hexagon {
+        .circle {
           width: 60px;
           height: 60px;
-          clip-path: polygon(
-            50% 0%,
-            100% 25%,
-            100% 75%,
-            50% 100%,
-            0% 75%,
-            0% 25%
-          );
+          border-radius: 50%;
         }
       `}</style>
     </section>
